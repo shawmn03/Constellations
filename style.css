@@ -131,10 +131,15 @@ body {
 
 h3 {
     position: fixed;
-    bottom: 10%;
-    right: 38%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    margin: 10;
     color: #fff;
-    margin: 0;
     font-size: 1.5em; 
 }
 
