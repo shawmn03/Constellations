@@ -1,0 +1,155 @@
+body {
+    overflow: scroll;
+    margin: 0;
+    font-family: "Gaegu", sans-serif;
+    font-size: larger;
+    background-color: #000;
+    background-image: url(images/Sky.jpg);
+    color: #fff;
+}
+
+.title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    margin: 10;
+    font-family: "Twinkle Star", sans-serif;
+    letter-spacing: 2px;
+}
+
+#home-button {
+    position: absolute;
+    top: 1250px;
+    left: 1250px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #70a1ff,
+                0 0 20px #70a1ff;
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#home-button:hover {
+    transform: scale(2);
+}
+
+.constellation-space {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.constellation-space:hover {
+    transform: scale(1.1); 
+    z-index: 999;
+}
+
+.constellation-space img {
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.constellation-space:hover img {
+    box-shadow: 0 0 10px 5px #fff, 
+                0 0 20px 10px #70a1ff, 
+                0 0 30px 15px #ff7f50; 
+}
+
+.constellation-space h2 {
+    font: script;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.zodiac-info {
+    position: absolute;
+    bottom: -120px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    display: none; 
+    z-index: 1001; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-space {
+    position: relative;
+    width: 2500px;
+    height: 2500px;
+    margin: 0 auto;
+    border: 25px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+#container {
+    position: relative;
+    width: 4500px;
+    height: 1800px;
+    padding-top: 50px;
+}
+
+#enter-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #70a1ff,
+                0 0 20px #70a1ff;
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#enter-button:hover {
+    transform: scale(0.5); 
+}
+
+h3 {
+    position: fixed;
+    bottom: 10%;
+    right: 38%;
+    color: #fff;
+    margin: 0;
+    font-size: 1.5em; 
+}
+
+#direction-label {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2000;
+    pointer-events: none;
+}
